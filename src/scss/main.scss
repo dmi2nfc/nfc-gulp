@@ -1,0 +1,19 @@
+@import "_point";
+
+.container {
+@include wrapper();
+}
+.items {
+@include row-flex();
+}
+.item {
+    @include col();
+    @include size(4);
+    @include size-md(6);
+    @include size-xs(10);
+    @include md-block(){
+        color:red;
+        font-weight: bold
+    };
+
+}
